@@ -1,0 +1,29 @@
+/* Global stylesheet - Native component scaling without screen zoom */
+
+html {
+  font-size: 14.4px !important; /* 90% of 16px base font size */
+}
+
+html, body, #root {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce explicit font sizes and component paddings natively */
+body {
+  font-size: 0.9rem;
+}
+
+button, input, select, textarea {
+  font-size: 0.9em;
+}
+
+/* Scaled icon defaults */
+svg.lucide {
+  transform: scale(0.9);
+}
